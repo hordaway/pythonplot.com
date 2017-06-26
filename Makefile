@@ -15,10 +15,10 @@ travis: render
 	echo "Done"
 
 qrender:
-	python render.py "Examples.ipynb"
+	python render/render.py "Examples.ipynb"
 
 render: run_nb
-	python render.py "Examples.$(GIT_COMMIT).ipynb"
+	python render/render.py "Examples.$(GIT_COMMIT).ipynb"
 
 s3_upload:
 	s3cmd sync $(OUTPUTDIR)/ s3://$(S3_BUCKET) --acl-public --delete-removed --guess-mime-type --no-mime-magic --no-preserve
