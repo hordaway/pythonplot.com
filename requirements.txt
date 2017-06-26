@@ -5,10 +5,7 @@ ipython
 pandas
 jupyter
 seaborn
-rpy2
-plotnine
 jinja2
 jinja2-highlight
 markdown
-scikit-misc
 boto3
