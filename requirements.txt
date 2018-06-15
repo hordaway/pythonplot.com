@@ -14,4 +14,4 @@ boto3
 pytest
 plotly
 statsmodels
-rpy2
+#rpy2
